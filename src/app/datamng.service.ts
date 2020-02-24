@@ -10,6 +10,6 @@ export class DatamngService {
   constructor(private http: HttpClient) { }
 
   public getData(): Observable<any> {
-    return this.http.get("/ret");
+    return this.http.get("http://3.91.193.198:8080/ret");
   }
 }
