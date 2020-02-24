@@ -33,7 +33,7 @@ export class AppComponent {
   onDownload(){
     var link = document.createElement("a");
     link.download = "naics.xlsx";
-    link.href = "http://localhost:8080/test.xlsx";
+    link.href = "/test.xlsx";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
